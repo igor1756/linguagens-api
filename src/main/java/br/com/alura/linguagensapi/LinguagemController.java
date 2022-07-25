@@ -14,7 +14,7 @@ public class LinguagemController {
     @Autowired
     private LinguagemRepository repositorio;
 
-    @GetMapping("/linguagens")
+    @GetMapping("/linguagenss")
     public List<Linguagem> obterLinguagens(){
         List<Linguagem> linguagens = repositorio.findAll();
         return linguagens;
